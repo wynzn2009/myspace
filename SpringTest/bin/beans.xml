@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+	<bean id="stuDao" class="com.bzu.entity.StudentDaoImp">
+	</bean>
+	<bean id="stuService" class="com.bzu.entity.StudentServiceImp">
+		<property name="stuDao" bean="stuDao">
+		</property>
+	</bean>
+</beans>
